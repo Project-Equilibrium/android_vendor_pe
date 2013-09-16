@@ -1,15 +1,6 @@
 # Check for target product
 ifeq (pe_p880,$(TARGET_PRODUCT))
 
-# OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pe_xhdpi
-
-# PE device overlay
-#$(shell cp -f vendor/pe/prebuilt/common/bootanimation_framework/android-logo-mask_lg-xhdpi.png frameworks/base/core/res/assets/images/android-logo-mask.png)
-
-#PRODUCT_COPY_FILES += \
-#    vendor/pe/prebuilt/xhdpi/bootanimation.zip:system/media/bootanimation.zip
-
 # include PE common configuration
 include vendor/pe/config/pe_common.mk
 
