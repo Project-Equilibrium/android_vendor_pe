@@ -22,11 +22,11 @@ usage()
 . ./vendor/pe/tools/colors
 
 if [ ! -d ".repo" ]; then
-	echo -e ${red}"No .repo directory found.  Is this an Android build tree?"${txtrst}
+	echo -e ${red}"No .repo directory found. Is this an Android build tree?"${txtrst}
 	exit 1
 fi
 if [ ! -d "vendor/pe" ]; then
-	echo -e ${red}"No vendor/pe directory found.  Is this a PE build tree?"${txtrst}
+	echo -e ${red}"No vendor/pe directory found. Is this a PE build tree?"${txtrst}
 	exit 1
 fi
 
@@ -69,7 +69,7 @@ VERSION="$PE_VERSION_MAJOR.$PE_VERSION_MINOR.$PE_VERSION_MAINTENANCE"
 # get time of startup
 t1=$($DATE +%s)
 
-echo -e ${cya}"Building Project-Equilibrium v$VERSION"${txtrst}
+echo -e ${cya}"Building Project Equilibrium v$VERSION"${txtrst}
 
 # PAC device dependencies
 echo -e ""
@@ -135,4 +135,3 @@ tmin=$(( (t2-t1)/60 ))
 tsec=$(( (t2-t1)%60 ))
 
 echo -e ${bldgrn}"Total time elapsed:${txtrst} ${grn}$tmin minutes $tsec seconds"${txtrst}
-
