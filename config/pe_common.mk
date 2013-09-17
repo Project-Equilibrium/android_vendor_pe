@@ -25,6 +25,8 @@ PRODUCT_COPY_FILES += \
     vendor/pe/prebuilt/common/xbin/zip:system/xbin/zip \
     vendor/pe/prebuilt/common/xbin/zipalign:system/xbin/zipalign
     
+BOARD := $(subst pe_,,$(TARGET_PRODUCT))
+
 # Add CM release version
 CM_RELEASE := true
 CM_BUILD := $(BOARD)
