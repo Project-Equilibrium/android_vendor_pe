@@ -24,6 +24,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/pe/prebuilt/common/xbin/zip:system/xbin/zip \
     vendor/pe/prebuilt/common/xbin/zipalign:system/xbin/zipalign
+    
+# Add CM release version
+CM_RELEASE := true
+CM_BUILD := $(BOARD)
 
 # PE version
 PE_VERSION_MAJOR = 1
