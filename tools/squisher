@@ -33,7 +33,6 @@ else
     OTAPACKAGE=$OUT/$TARGET_PRODUCT-ota-$TARGET_BUILD_VARIANT.$USER.zip
 fi
 if [ ! -f "$OTAPACKAGE" ]; then
-	echo -e ${red}"$OTAPACKAGE doesn't exist!"${txtrst};
 	exit 1
 fi
 
