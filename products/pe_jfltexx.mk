@@ -1,5 +1,6 @@
+
  # Check for target product
-ifeq (pe_i9505,$(TARGET_PRODU CT))
+ifeq (pe_i9505,$(TARGET_PRODUCT)) 
 
 # include PE common configuration
 include vendor/pe/config/pe_common.mk
