@@ -1,8 +1,8 @@
 [
   {
     "account":      "intervigilium",
-    "repository":   "proprietary_vendor_samsung_i9500",
-    "target_path":  "vendor/samsung-extra/i9500",
+    "repository":   "proprietary_vendor_samsung",
+    "target_path":  "vendor/samsung",
     "revision":     "cm-10.2"
   },
   {
