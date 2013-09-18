@@ -7,7 +7,7 @@ include vendor/pe/config/pe_common.mk
 # Inherit CM device configuration
 $(call inherit-product, device/lge/mako/cm.mk)
 
-PRODUCT_NAME := mako
+PRODUCT_NAME := pe_mako
 
 # Update local_manifest.xml
 GET_PROJECT_RMS := $(shell vendor/pe/tools/removeprojects.py $(PRODUCT_NAME))
