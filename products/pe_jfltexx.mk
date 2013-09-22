@@ -3,7 +3,7 @@ ifeq (pe_jfltexx,$(TARGET_PRODUCT))
 
 # Copy bootanimation
 PRODUCT_COPY_FILES += \
-    vendor/pac/prebuilt/bootanimation/xxhdpi.zip:system/media/bootanimation.zip
+    vendor/pe/prebuilt/bootanimation/xxhdpi.zip:system/media/bootanimation.zip
 
 # include PE common configuration
 include vendor/pe/config/pe_common.mk

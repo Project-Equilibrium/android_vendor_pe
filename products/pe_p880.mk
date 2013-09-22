@@ -3,7 +3,7 @@ ifeq (pe_p880,$(TARGET_PRODUCT))
 
 # Copy bootanimation
 PRODUCT_COPY_FILES += \
-    vendor/pac/prebuilt/bootanimation/xhdpi.zip:system/media/bootanimation.zip
+    vendor/pe/prebuilt/bootanimation/xhdpi.zip:system/media/bootanimation.zip
 
 # include PE common configuration
 include vendor/pe/config/pe_common.mk
