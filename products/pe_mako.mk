@@ -1,6 +1,10 @@
 # Check for target product
 ifeq (pe_mako,$(TARGET_PRODUCT))
 
+# Copy bootanimation
+PRODUCT_COPY_FILES += \
+    vendor/pac/prebuilt/bootanimation/xhdpi.zip:system/media/bootanimation.zip
+
 # include PE common configuration
 include vendor/pe/config/pe_common.mk
 

@@ -1,6 +1,10 @@
 # Check for target product
 ifeq (pe_i9500,$(TARGET_PRODUCT))
 
+# Copy bootanimation
+PRODUCT_COPY_FILES += \
+    vendor/pac/prebuilt/bootanimation/xxhdpi.zip:system/media/bootanimation.zip
+
 # include PE common configuration
 include vendor/pe/config/pe_common.mk
 
