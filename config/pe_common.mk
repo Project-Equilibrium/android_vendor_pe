@@ -25,6 +25,10 @@ PRODUCT_COPY_FILES += \
     vendor/pe/prebuilt/common/xbin/zip:system/xbin/zip \
     vendor/pe/prebuilt/common/xbin/zipalign:system/xbin/zipalign
     
+# HALO
+PRODUCT_PACKAGES += \
+    HALO
+
 BOARD := $(subst pe_,,$(TARGET_PRODUCT))
 
 # Add CM release version
